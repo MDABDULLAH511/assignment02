@@ -17,7 +17,7 @@ body {
 :root {
     --primary-color: #000000;
     --text-color: rgba(0, 0, 0, 0.5);
-    --accent-color: #E95A08
+    --accent-color: #E95A08;
 }
 
 .header-highlights {
@@ -120,7 +120,6 @@ nav {
     font-weight: 700;
     font-family: "Noto Serif", serif;
     margin-bottom: 20px;
-
 }
 
 .banner-image {
@@ -192,7 +191,6 @@ nav {
     right: -90px;
     top: -130px;
     animation: spin 10s linear infinite;
-
 }
 
 @keyframes spin {
@@ -403,13 +401,13 @@ footer {
 /* Mobile Resposive Start Here */
 @media screen and (max-width:576px) {
 
+    /* Common CSS */
     .plants-part,
     .lover-part,
     .deals-part {
         margin: 0 15px;
     }
 
-    /* Common CSS */
     .section-header h2 {
         font-size: 1.5em;
         margin-bottom: 15px;
@@ -518,7 +516,6 @@ footer {
         flex-direction: column;
         gap: 20px;
     }
-
 
     .deals-left {
         width: 100%;
