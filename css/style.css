@@ -40,7 +40,7 @@ body {
 }
 
 p {
-    font-size: 1.35em;
+    font-size: 1.375em;
     line-height: 28px;
     font-weight: 400;
     color: var(--text-color);
@@ -57,7 +57,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 30px;
+    margin: 30px 0 120px 0;
 }
 
 .brand img {
@@ -73,6 +73,7 @@ nav {
 .main-menu ul {
     display: flex;
     justify-content: flex-end;
+    align-items: center;
 }
 
 .main-menu ul li {
@@ -104,7 +105,7 @@ nav {
 
 /* Banner CSS */
 .banner {
-    padding: 120px 0;
+    padding: 100px 0 0;
     display: flex;
     justify-content: space-between;
     align-items: end;
@@ -126,11 +127,6 @@ nav {
     max-width: 570px;
 }
 
-/* Main Body CSS Start Here */
-/* main {
-    max-width: 1140px;
-    margin: auto;
-} */
 
 /* Plants Part CSS Start Here  */
 .plants-part,
@@ -140,6 +136,9 @@ nav {
     margin: auto;
 }
 
+.plants-part {
+    padding: 120px 0;
+}
 
 .plants-item {
     display: grid;
@@ -171,11 +170,12 @@ nav {
     border: none;
     color: #ffffff;
     background-color: var(--accent-color);
+    cursor: pointer;
 }
 
 /* Lover Part CSS Start here */
 .lover-part {
-    padding: 210px 0 120px;
+    padding: 100px 0 120px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -191,6 +191,18 @@ nav {
     position: absolute;
     right: -90px;
     top: -130px;
+    animation: spin 10s linear infinite;
+
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 .lover-content {
@@ -269,6 +281,7 @@ nav {
     color: #ffffff;
     font-size: 1em;
     font-weight: 600;
+    cursor: pointer;
 }
 
 .zobo-plant h4 {
@@ -277,6 +290,7 @@ nav {
 
 .zobo-plant button {
     font-size: 1.7em;
+    cursor: pointer;
 }
 
 .bloom-plant {
@@ -349,4 +363,38 @@ input[type=submit] {
     border-radius: 0 3px 3px 0;
 }
 
-Footer Part CSS
+/* Footer Part CSS Start Here */
+footer {
+    max-width: 1140px;
+    margin: auto;
+    padding: 50px 0;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 360px 85px 130px 216px;
+    justify-content: space-between;
+}
+
+.footer-brand img {
+    margin-bottom: 20px;
+}
+
+.footer-menu ul {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.footer-menu ul li {
+    list-style: none;
+    font-size: 1em;
+    color: var(--text-color);
+}
+
+.icon-groop {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 25px;
+}
