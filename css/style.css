@@ -190,8 +190,10 @@ nav {
     position: absolute;
     right: -90px;
     top: -130px;
+    z-index: 99;
     animation: spin 10s linear infinite;
 }
+
 
 @keyframes spin {
     0% {
